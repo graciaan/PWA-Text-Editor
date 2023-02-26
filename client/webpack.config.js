@@ -12,9 +12,6 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      database: './src/js/database.js',
-      editor: './src/js/editor.js',
-      header: './src/js/header.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -37,7 +34,7 @@ module.exports = () => {
             new WebpackPwaManifest({
               fingerprints: false,
               inject: true,
-              name: 'PWA Text Editor',
+              name: 'Just Another Text Editor',
               short_name: 'JATE',
               description: 'Just Another Text Editor!',
               background_color: '#225ca3',
